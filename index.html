@@ -25,6 +25,9 @@ details[open] .chev{transform:rotate(45deg)}
 video,img{display:block}
 html{scroll-behavior:smooth}
 p,li,summary,figcaption{letter-spacing:.04em}
+p,li,h1,h2,h3,summary,figcaption,div{word-break:auto-phrase;text-wrap:pretty}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:32px 64px;align-items:end}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
 h1{line-height:1.25!important}
 </style>
 </head>
@@ -44,21 +47,21 @@ h1{line-height:1.25!important}
 <a href="#start" style="color: #b1bac4; text-decoration: none">はじめ方</a>
 <a href="#faq" style="color: #b1bac4; text-decoration: none">よくある質問</a>
 </div>
-<a href="#start" style="background: #58a6ff; color: #0d1117; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 10px; text-decoration: none; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">使ってみる</a>
+<a href="https://portfolio.aicjp.ai/?work=01a1d5a2-24e7-703e-b51e-73b88fe55b72" target="_blank" rel="noopener" style="background: #58a6ff; color: #0d1117; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 10px; text-decoration: none; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">使ってみる</a>
 </nav>
 </header>
 
 <!-- HERO -->
 <section id="top" style="max-width: 1200px; margin: 0 auto; padding: 128px 24px 72px; display: flex; flex-direction: column; gap: 64px">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 32px 56px; align-items: end">
+<div class="hero-grid">
 <div style="display: flex; flex-direction: column; gap: 22px">
 <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.25em; color: #58a6ff">日本株・米国株 クオンツ分析ツール</div>
-<h1 style="margin: 0; font-size: clamp(44px, 6vw, 80px); line-height: 1.12; font-weight: 900"><span style="display: inline-block">迷いを、</span><span style="display: inline-block">数字に。</span></h1>
+<h1 style="margin: 0; font-size: clamp(40px, 5.4vw, 80px); white-space: nowrap; line-height: 1.12; font-weight: 900"><span style="display: inline-block">迷いを、</span><span style="display: inline-block">数字に。</span></h1>
 </div>
 <div style="display: flex; flex-direction: column; gap: 22px">
 <p style="margin: 0; font-size: 18px; color: #b1bac4">RSI・MACD・ボリンジャーバンド・移動平均をひとつのスコアに。売買の判定から「どの価格で入るか」の目安まで、根拠と一緒に表示します。</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="#start" style="background: #58a6ff; color: #0d1117; font-weight: 700; font-size: 16px; padding: 14px 28px; border-radius: 12px; text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">今すぐ使ってみる</a>
+<a href="https://portfolio.aicjp.ai/?work=01a1d5a2-24e7-703e-b51e-73b88fe55b72" target="_blank" rel="noopener" style="background: #58a6ff; color: #0d1117; font-weight: 700; font-size: 16px; padding: 14px 28px; border-radius: 12px; text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">今すぐ使ってみる</a>
 <a href="#tour" style="border: 1px solid #30363d; color: #e6edf3; font-weight: 700; font-size: 16px; padding: 14px 28px; border-radius: 12px; text-decoration: none; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">実際の画面を見る</a>
 </div>
 </div>
