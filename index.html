@@ -12,26 +12,31 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/aic_logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Inter:wght@500;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#0d1117}
+:root{--f-body:'Zen Kaku Gothic New', sans-serif;--f-head:'Zen Kaku Gothic New', sans-serif;--f-num:'Inter', sans-serif}
+body{margin:0;background:#0d1117;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-head);font-weight:900!important;letter-spacing:0.02em}
 a{color:#79b8ff}a:hover{color:#a5d0ff}
 details summary{cursor:pointer;list-style:none}
 details summary::-webkit-details-marker{display:none}
 details[open] .chev{transform:rotate(45deg)}
 video,img{display:block}
+html{scroll-behavior:smooth}
+p,li,summary,figcaption{letter-spacing:.04em}
+h1{line-height:1.25!important}
 </style>
-<style>html{scroll-behavior:smooth}</style>
 </head>
 <body>
-<div style="background: #0d1117; color: #e6edf3; font-family: 'Noto Sans JP', sans-serif; line-height: 1.7; min-height: 100vh; position: relative">
+<div style="background: #0d1117; color: #e6edf3; font-family: var(--f-body); line-height: 1.95; min-height: 100vh; position: relative">
 
 <!-- NAV -->
 <header style="border-bottom: 1px solid #21262d; background: rgba(13,17,23,0.92)">
 <nav style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 32px">
 <a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #e6edf3">
-<span style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #58a6ff; line-height: 1">Σ</span>
-<span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; letter-spacing: 0.2em">SIGMA</span>
+<span style="font-family: var(--f-num); font-size: 28px; font-weight: 700; color: #58a6ff; line-height: 1">Σ</span>
+<span style="font-family: var(--f-num); font-size: 20px; font-weight: 700; letter-spacing: 0.2em">SIGMA</span>
 </a>
 <div style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 15px; flex: 1 1 auto">
 <a href="#tour" style="color: #b1bac4; text-decoration: none">画面と機能</a>
@@ -44,7 +49,7 @@ video,img{display:block}
 </header>
 
 <!-- HERO -->
-<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 72px; display: flex; flex-direction: column; gap: 48px">
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 128px 24px 72px; display: flex; flex-direction: column; gap: 64px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 32px 56px; align-items: end">
 <div style="display: flex; flex-direction: column; gap: 22px">
 <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.25em; color: #58a6ff">日本株・米国株 クオンツ分析ツール</div>
@@ -63,16 +68,16 @@ video,img{display:block}
 <figcaption style="font-size: 13px; color: #8b949e; padding: 10px 16px">紹介動画（45秒・BGMあり）｜実際のアプリ画面。銘柄名・コードは伏せ字、一部デモデータを使用しています。</figcaption>
 </figure>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1px; background: #30363d; border: 1px solid #30363d; border-radius: 16px; overflow: hidden">
-<div style="background: #0f141b; padding: 22px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 38px; font-weight: 700">218</span><span style="color: #8b949e; font-size: 14px">日本株（15セクター）</span></div>
-<div style="background: #0f141b; padding: 22px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 38px; font-weight: 700">73</span><span style="color: #8b949e; font-size: 14px">米国株・ETF（8セクター）</span></div>
-<div style="background: #0f141b; padding: 22px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 38px; font-weight: 700">4<span style="font-size: 20px">指標</span></span><span style="color: #8b949e; font-size: 14px">RSI・MACD・BB・移動平均</span></div>
-<div style="background: #0f141b; padding: 22px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 38px; font-weight: 700">15<span style="font-size: 20px">秒</span></span><span style="color: #8b949e; font-size: 14px">株価の自動更新間隔</span></div>
+<div style="background: #0f141b; padding: 22px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--f-num); font-size: 38px; font-weight: 700">218</span><span style="color: #8b949e; font-size: 14px">日本株（15セクター）</span></div>
+<div style="background: #0f141b; padding: 22px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--f-num); font-size: 38px; font-weight: 700">73</span><span style="color: #8b949e; font-size: 14px">米国株・ETF（8セクター）</span></div>
+<div style="background: #0f141b; padding: 22px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--f-num); font-size: 38px; font-weight: 700">4<span style="font-size: 20px">指標</span></span><span style="color: #8b949e; font-size: 14px">RSI・MACD・BB・移動平均</span></div>
+<div style="background: #0f141b; padding: 22px 24px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: var(--f-num); font-size: 38px; font-weight: 700">15<span style="font-size: 20px">秒</span></span><span style="color: #8b949e; font-size: 14px">株価の自動更新間隔</span></div>
 </div>
 </section>
 
 <section aria-labelledby="notice-h" style="border-top: 1px solid #21262d">
 <div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px">
-<div style="border: 2px solid #f2c94c; background: rgba(242,201,76,0.07); border-radius: 20px; padding: 36px 40px; display: flex; flex-direction: column; gap: 14px">
+<div style="border: 2px solid #f2c94c; background: rgba(242,201,76,0.07); border-radius: 20px; padding: 36px 40px; display: flex; flex-direction: column; gap: 20px">
 <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.2em; color: #f2c94c">IMPORTANT</div>
 <h2 id="notice-h" style="margin: 0; font-size: clamp(24px, 3vw, 36px); line-height: 1.4; font-weight: 900">SIGMAは「勝てる」と助言するツールではありません。</h2>
 <p style="margin: 0; color: #e6edf3; font-size: 17px">どの銘柄を買えば儲かるかを教えるツールではなく、利益を約束するものでも、投資助言でもありません。過去の値動きから計算したテクニカル指標を整理して、「なぜその判定なのか」という根拠を見える化するための分析ツールです。</p>
@@ -82,42 +87,42 @@ video,img{display:block}
 </section>
 <!-- PROBLEM -->
 <section style="border-top: 1px solid #21262d; background: #0f141b">
-<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 128px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 760px">
 <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.2em; color: #58a6ff">WHY SIGMA</div>
-<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.3; font-weight: 900">見るべき指標は多いのに、<br>判断はいつも一瞬。</h2>
+<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.5; font-weight: 900">見るべき指標は多いのに、<br>判断はいつも一瞬。</h2>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px">
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 20px; font-weight: 700">指標がバラバラ</div><p style="margin: 0; color: #b1bac4; font-size: 15px">RSIは「買い」、MACDは「様子見」。チャートを行き来して、結局どれを信じるか迷う。</p></div>
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 20px; font-weight: 700">「いくらで買うか」が曖昧</div><p style="margin: 0; color: #b1bac4; font-size: 15px">買い時っぽいのは分かっても、指値・利確・損切りの価格は感覚任せになりがち。</p></div>
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 20px; font-weight: 700">監視する銘柄が多すぎる</div><p style="margin: 0; color: #b1bac4; font-size: 15px">ウォッチリスト、決算日、ニュース。毎日すべてを追いかける時間はない。</p></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 28px">
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 34px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 20px; font-weight: 700">指標がバラバラ</div><p style="margin: 0; color: #b1bac4; font-size: 15px">RSIは「買い」、MACDは「様子見」。チャートを行き来して、結局どれを信じるか迷う。</p></div>
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 34px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 20px; font-weight: 700">「いくらで買うか」が曖昧</div><p style="margin: 0; color: #b1bac4; font-size: 15px">買い時っぽいのは分かっても、指値・利確・損切りの価格は感覚任せになりがち。</p></div>
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 34px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 20px; font-weight: 700">監視する銘柄が多すぎる</div><p style="margin: 0; color: #b1bac4; font-size: 15px">ウォッチリスト、決算日、ニュース。毎日すべてを追いかける時間はない。</p></div>
 </div>
 </div>
 </section>
 
 <!-- TOUR -->
 <section id="tour" style="border-top: 1px solid #21262d">
-<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 88px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 136px 24px; display: flex; flex-direction: column; gap: 136px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 760px">
 <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.2em; color: #58a6ff">PRODUCT TOUR</div>
-<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.3; font-weight: 900">実際の画面で、できること。</h2>
+<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.5; font-weight: 900">実際の画面で、できること。</h2>
 <p style="margin: 0; color: #8b949e; font-size: 14px">掲載画面はすべて実際のアプリです。銘柄名・コードは伏せ字にし、一部にデモデータを使用しています。</p>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px 56px; align-items: center">
-<div style="display: flex; flex-direction: column; gap: 14px">
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #58a6ff">01　WATCHLIST</div>
-<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.35; font-weight: 900">ウォッチリストを、ひと目で。</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px 72px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: var(--f-num); font-size: 15px; font-weight: 700; color: #58a6ff">01　WATCHLIST</div>
+<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.55; font-weight: 900">ウォッチリストを、ひと目で。</h3>
 <p style="margin: 0; color: #b1bac4; font-size: 16px">証券コードを追加して「分析する」を押すだけ。株価・RSI・MA5・5日騰落率と3ヶ月の値動きをカードで一覧化し、上昇系・中立・下落系の数を自動で集計します。リアルタイムONで15秒ごとに更新。</p>
 </div>
 <img src="assets/shot_grid.jpg" alt="ウォッチリスト画面。銘柄カードが判定ラベルと小さなチャート付きで並ぶ" style="width: 100%; height: auto; border-radius: 14px; border: 1px solid #30363d; box-shadow: 0 24px 60px rgba(0,0,0,0.45)">
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px 56px; align-items: center">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px 72px; align-items: center">
 <img src="assets/shot_timing.jpg" alt="売買タイミング画面。エントリー目安価格、利確目標、損切りライン、判断根拠、日中1分足チャート" style="width: 100%; height: auto; max-width: 560px; justify-self: center; border-radius: 14px; border: 1px solid #30363d; box-shadow: 0 24px 60px rgba(0,0,0,0.45)">
-<div style="display: flex; flex-direction: column; gap: 14px">
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #58a6ff">02　TIMING</div>
-<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.35; font-weight: 900">判定から、エントリー価格まで。</h3>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: var(--f-num); font-size: 15px; font-weight: 700; color: #58a6ff">02　TIMING</div>
+<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.55; font-weight: 900">判定から、エントリー価格まで。</h3>
 <p style="margin: 0; color: #b1bac4; font-size: 16px">1銘柄を深く分析する画面です。判定（強い買い〜強い売り）に加え、エントリー目安・利確目標・損切りラインを価格で表示。日中は1分足のボリンジャーバンドで目安を更新し、緑・黄・赤で「今入れるか」を伝えます。</p>
 <ul style="margin: 0; padding-left: 20px; color: #b1bac4; font-size: 15px; display: flex; flex-direction: column; gap: 4px">
 <li>判断根拠のテクニカル指標を一覧表示</li>
@@ -127,63 +132,63 @@ video,img{display:block}
 </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px 56px; align-items: center">
-<div style="display: flex; flex-direction: column; gap: 14px">
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #58a6ff">03　DETAIL</div>
-<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.35; font-weight: 900">カードを押せば、チャートと根拠。</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px 72px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: var(--f-num); font-size: 15px; font-weight: 700; color: #58a6ff">03　DETAIL</div>
+<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.55; font-weight: 900">カードを押せば、チャートと根拠。</h3>
 <p style="margin: 0; color: #b1bac4; font-size: 16px">一覧のカードをクリックすると、3ヶ月チャートと日中1分足を切り替えて確認できます。RSI・MA5・MA25の値と、判定に使ったシグナルの理由もその場で表示。</p>
 </div>
 <img src="assets/shot_modal.jpg" alt="銘柄詳細ウィンドウ。3ヶ月チャートと指標、シグナル根拠" style="width: 100%; height: auto; max-width: 520px; justify-self: center; border-radius: 14px; border: 1px solid #30363d; box-shadow: 0 24px 60px rgba(0,0,0,0.45)">
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px 56px; align-items: center">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px 72px; align-items: center">
 <img src="assets/shot_screener2.jpg" alt="株式スクリーナー画面。セクター別に銘柄カードが並び、上昇系・中立・下落系の件数を集計" style="width: 100%; height: auto; max-width: 620px; justify-self: center; border-radius: 14px; border: 1px solid #30363d; box-shadow: 0 24px 60px rgba(0,0,0,0.45)">
-<div style="display: flex; flex-direction: column; gap: 14px">
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #58a6ff">04　SCREENER</div>
-<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.35; font-weight: 900">日米291銘柄を、セクターごとに。</h3>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: var(--f-num); font-size: 15px; font-weight: 700; color: #58a6ff">04　SCREENER</div>
+<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.55; font-weight: 900">日米291銘柄を、セクターごとに。</h3>
 <p style="margin: 0; color: #b1bac4; font-size: 16px">「スキャン開始」で日本株・米国株をセクター単位で一括分析。全て／日本株／米国株の切り替えと、〜500円・〜1,000円…5,000円超の価格帯で絞り込めます。</p>
 </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px 56px; align-items: center">
-<div style="display: flex; flex-direction: column; gap: 14px">
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #58a6ff">05　AI SCREENING</div>
-<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.35; font-weight: 900">条件プリセットで、候補を抽出。</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px 72px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: var(--f-num); font-size: 15px; font-weight: 700; color: #58a6ff">05　AI SCREENING</div>
+<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.55; font-weight: 900">条件プリセットで、候補を抽出。</h3>
 <p style="margin: 0; color: #b1bac4; font-size: 16px">「売られすぎ（RSI 40未満）」「上昇トレンド（MA5 &gt; MA25）」「割安成長（RSI 30〜60＋上昇シグナル）」の3つのプリセットか、RSIの範囲とシグナルを手動で指定して、日本株全体から条件に合う銘柄を抽出します。</p>
 </div>
 <img src="assets/shot_ai.jpg" alt="AIスクリーニング画面。プリセットボタンと抽出結果のカード" style="width: 100%; height: auto; max-width: 540px; justify-self: center; border-radius: 14px; border: 1px solid #30363d; box-shadow: 0 24px 60px rgba(0,0,0,0.45)">
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px 56px; align-items: center">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px 72px; align-items: center">
 <img src="assets/shot_calc.jpg" alt="還元率・損益計算機。入力欄と、投資元本・評価額・キャピタルゲイン・配当合計・トータルリターン" style="width: 100%; height: auto; max-width: 540px; justify-self: center; border-radius: 14px; border: 1px solid #30363d; box-shadow: 0 24px 60px rgba(0,0,0,0.45)">
-<div style="display: flex; flex-direction: column; gap: 14px">
-<div style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #58a6ff">06　CALCULATOR</div>
-<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.35; font-weight: 900">値上がり益＋配当を、まとめて試算。</h3>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: var(--f-num); font-size: 15px; font-weight: 700; color: #58a6ff">06　CALCULATOR</div>
+<h3 style="margin: 0; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.55; font-weight: 900">値上がり益＋配当を、まとめて試算。</h3>
 <p style="margin: 0; color: #b1bac4; font-size: 16px">買値・現在値（目標値）・株数・配当利回り・保有年数を入れるだけで、キャピタルゲイン・配当合計・トータルリターンを計算。銘柄詳細から値を引き継ぐこともできます。</p>
 </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 20px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 28px">
 
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 30px; display: flex; flex-direction: column; gap: 8px">
 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"></path></svg>
 <div style="font-size: 18px; font-weight: 700">決算カレンダー</div>
 <p style="margin: 0; color: #b1bac4; font-size: 14px">ウォッチリスト銘柄の決算発表予定日を一覧で確認（J-Quants）。</p>
 </div>
 
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 30px; display: flex; flex-direction: column; gap: 8px">
 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7"></path></svg>
 <div style="font-size: 18px; font-weight: 700">財務データ</div>
 <p style="margin: 0; color: #b1bac4; font-size: 14px">PER・ROE・EPS・年間配当・売上高・営業利益を銘柄ごとに表示。</p>
 </div>
 
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 30px; display: flex; flex-direction: column; gap: 8px">
 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg>
 <div style="font-size: 18px; font-weight: 700">ニュース感情分析</div>
 <p style="margin: 0; color: #b1bac4; font-size: 14px">最新ニュースの見出しをポジティブ／中立／ネガティブに分類。</p>
 </div>
 
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 30px; display: flex; flex-direction: column; gap: 8px">
 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10 21h4"></path></svg>
 <div style="font-size: 18px; font-weight: 700">IR・決算アラート</div>
 <p style="margin: 0; color: #b1bac4; font-size: 14px">起動時にウォッチリスト銘柄のIRニュースと決算日をまとめて確認。</p>
@@ -195,10 +200,10 @@ video,img{display:block}
 
 <!-- HOW -->
 <section id="how" style="border-top: 1px solid #21262d; background: #0f141b">
-<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 136px 24px; display: flex; flex-direction: column; gap: 64px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 760px">
 <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.2em; color: #58a6ff">HOW IT WORKS</div>
-<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.3; font-weight: 900">4つの指標を、ひとつのスコアに。</h2>
+<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.5; font-weight: 900">4つの指標を、ひとつのスコアに。</h2>
 <p style="margin: 0; color: #b1bac4; font-size: 17px">売買タイミング画面の判定ロジックです。ブラックボックスではなく、どの指標が何点を付けたかまで画面に表示します。</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 24px; align-items: start">
@@ -219,35 +224,35 @@ video,img{display:block}
 <div style="background: #161b22; border: 1px solid #30363d; border-radius: 18px; overflow: hidden">
 <div style="padding: 20px 24px; border-bottom: 1px solid #30363d; font-weight: 700">合計スコアと判定</div>
 <div style="padding: 12px 24px 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700">+5 以上</span><span style="background: #0f5132; color: #b9f5cf; padding: 4px 14px; border-radius: 999px; font-weight: 700">強い買い</span></div>
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700">+3 〜 +4</span><span style="background: #14462d; color: #b9f5cf; padding: 4px 14px; border-radius: 999px; font-weight: 700">買い</span></div>
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700">+1 〜 +2</span><span style="background: #1d3b2b; color: #cdeedb; padding: 4px 14px; border-radius: 999px; font-weight: 700">やや買い</span></div>
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700">0</span><span style="background: #2d333b; color: #e6edf3; padding: 4px 14px; border-radius: 999px; font-weight: 700">様子見</span></div>
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700">−1 〜 −2</span><span style="background: #4a3216; color: #ffd8a8; padding: 4px 14px; border-radius: 999px; font-weight: 700">やや売り</span></div>
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700">−3 〜 −4</span><span style="background: #5a1f1a; color: #ffc9c2; padding: 4px 14px; border-radius: 999px; font-weight: 700">売り</span></div>
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700">−5 以下</span><span style="background: #6e1b14; color: #ffc9c2; padding: 4px 14px; border-radius: 999px; font-weight: 700">強い売り</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0"><span style="font-family: var(--f-num); font-weight: 700">+5 以上</span><span style="background: #0f5132; color: #b9f5cf; padding: 4px 14px; border-radius: 999px; font-weight: 700">強い買い</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: var(--f-num); font-weight: 700">+3 〜 +4</span><span style="background: #14462d; color: #b9f5cf; padding: 4px 14px; border-radius: 999px; font-weight: 700">買い</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: var(--f-num); font-weight: 700">+1 〜 +2</span><span style="background: #1d3b2b; color: #cdeedb; padding: 4px 14px; border-radius: 999px; font-weight: 700">やや買い</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: var(--f-num); font-weight: 700">0</span><span style="background: #2d333b; color: #e6edf3; padding: 4px 14px; border-radius: 999px; font-weight: 700">様子見</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: var(--f-num); font-weight: 700">−1 〜 −2</span><span style="background: #4a3216; color: #ffd8a8; padding: 4px 14px; border-radius: 999px; font-weight: 700">やや売り</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: var(--f-num); font-weight: 700">−3 〜 −4</span><span style="background: #5a1f1a; color: #ffc9c2; padding: 4px 14px; border-radius: 999px; font-weight: 700">売り</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #21262d"><span style="font-family: var(--f-num); font-weight: 700">−5 以下</span><span style="background: #6e1b14; color: #ffc9c2; padding: 4px 14px; border-radius: 999px; font-weight: 700">強い売り</span></div>
 </div>
 </div>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px">
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 700">エントリー目安</div><p style="margin: 0; color: #b1bac4; font-size: 14px">買い系は現在値。やや買いはBB下限・MA25・直近安値付近のうち高い方。様子見はそれらの低い方まで待つ設計です。</p></div>
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 700">利確目標</div><p style="margin: 0; color: #b1bac4; font-size: 14px">現在値×1.08 とボリンジャー上限のうち、高い方。</p></div>
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 700">損切りライン</div><p style="margin: 0; color: #b1bac4; font-size: 14px">エントリー目安×0.95 とボリンジャー下限×0.97 のうち、低い方。</p></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 28px">
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 30px; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 700">エントリー目安</div><p style="margin: 0; color: #b1bac4; font-size: 14px">買い系は現在値。やや買いはBB下限・MA25・直近安値付近のうち高い方。様子見はそれらの低い方まで待つ設計です。</p></div>
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 30px; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 700">利確目標</div><p style="margin: 0; color: #b1bac4; font-size: 14px">現在値×1.08 とボリンジャー上限のうち、高い方。</p></div>
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 30px; display: flex; flex-direction: column; gap: 6px"><div style="font-weight: 700">損切りライン</div><p style="margin: 0; color: #b1bac4; font-size: 14px">エントリー目安×0.95 とボリンジャー下限×0.97 のうち、低い方。</p></div>
 </div>
 </div>
 </section>
 
 <!-- START -->
 <section id="start" style="border-top: 1px solid #21262d">
-<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 136px 24px; display: flex; flex-direction: column; gap: 64px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 760px">
 <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.2em; color: #58a6ff">GET STARTED</div>
-<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.3; font-weight: 900">3ステップで、すぐ使える。</h2>
+<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.5; font-weight: 900">3ステップで、すぐ使える。</h2>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px">
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #58a6ff">STEP 01</span><div style="font-size: 20px; font-weight: 700">起動する</div><p style="margin: 0; color: #b1bac4; font-size: 15px">「起動.bat」をダブルクリック。数秒でブラウザに画面が開きます。</p></div>
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #58a6ff">STEP 02</span><div style="font-size: 20px; font-weight: 700">銘柄コードを入れる</div><p style="margin: 0; color: #b1bac4; font-size: 15px">4桁の証券コードを追加。銘柄名は自動で取得されます。</p></div>
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #58a6ff">STEP 03</span><div style="font-size: 20px; font-weight: 700">スコアと価格を確認</div><p style="margin: 0; color: #b1bac4; font-size: 15px">判定・エントリー目安・損切りを見て、自分のルールで判断。</p></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 28px">
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 34px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: var(--f-num); font-size: 15px; font-weight: 700; color: #58a6ff">STEP 01</span><div style="font-size: 20px; font-weight: 700">起動する</div><p style="margin: 0; color: #b1bac4; font-size: 15px">「起動.bat」をダブルクリック。数秒でブラウザに画面が開きます。</p></div>
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 34px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: var(--f-num); font-size: 15px; font-weight: 700; color: #58a6ff">STEP 02</span><div style="font-size: 20px; font-weight: 700">銘柄コードを入れる</div><p style="margin: 0; color: #b1bac4; font-size: 15px">4桁の証券コードを追加。銘柄名は自動で取得されます。</p></div>
+<div style="background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 34px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: var(--f-num); font-size: 15px; font-weight: 700; color: #58a6ff">STEP 03</span><div style="font-size: 20px; font-weight: 700">スコアと価格を確認</div><p style="margin: 0; color: #b1bac4; font-size: 15px">判定・エントリー目安・損切りを見て、自分のルールで判断。</p></div>
 </div>
 <div style="background: linear-gradient(135deg, #16243a, #121a24); border: 1px solid #30363d; border-radius: 24px; padding: 48px 40px; display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center; justify-content: space-between">
 <div style="display: flex; flex-direction: column; gap: 8px; flex: 1 1 420px">
@@ -261,10 +266,10 @@ video,img{display:block}
 
 <!-- FAQ -->
 <section id="faq" style="border-top: 1px solid #21262d; background: #0f141b">
-<div style="max-width: 900px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="max-width: 900px; margin: 0 auto; padding: 136px 24px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 12px">
 <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.2em; color: #58a6ff">FAQ</div>
-<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.3; font-weight: 900">よくある質問</h2>
+<h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.5; font-weight: 900">よくある質問</h2>
 </div>
 
 <div style="display: flex; flex-direction: column; gap: 4px">
@@ -345,33 +350,6 @@ video,img{display:block}
 <p style="margin: 12px 0 0; color: #b1bac4; font-size: 15px; white-space: pre-line">ウォッチリストと売買タイミングは、4桁の証券コードで日本株を自由に追加できます。株式スクリーナーは日本株15セクター218銘柄と、米国株・ETF 8セクター73銘柄を収録しています。</p>
 </details>
 
-<details style="border-bottom: 1px solid #30363d; padding: 20px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 700; min-height: 28px"><span>決算カレンダーが表示されません。</span><span class="chev" style="font-size: 24px; color: #58a6ff; transition: transform .2s; line-height: 1" aria-hidden="true">+</span></summary>
-<p style="margin: 12px 0 0; color: #b1bac4; font-size: 15px; white-space: pre-line">決算予定日は J-Quants から取得しています。J-Quants の無料プランでは将来の予定日が取得できず、過去データのみとなるため表示されない場合があります。</p>
-</details>
-
-</div>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 4px">
-<div style="font-size: 14px; font-weight: 700; color: #8b949e; letter-spacing: 0.1em; padding-bottom: 8px">導入・動作環境</div>
-<div style="display: flex; flex-direction: column; border-top: 1px solid #30363d">
-
-<details style="border-bottom: 1px solid #30363d; padding: 20px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 700; min-height: 28px"><span>どんな環境で動きますか？</span><span class="chev" style="font-size: 24px; color: #58a6ff; transition: transform .2s; line-height: 1" aria-hidden="true">+</span></summary>
-<p style="margin: 12px 0 0; color: #b1bac4; font-size: 15px; white-space: pre-line">Windowsでは「起動.bat」をダブルクリックするか、exe版を起動するだけで使えます。Python 3 が入っていれば Mac・Linux でも動作し、ブラウザ（http://localhost:5050）から利用します。サーバーにデプロイしてWebアプリとして使うこともできます。</p>
-</details>
-
-<details style="border-bottom: 1px solid #30363d; padding: 20px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 700; min-height: 28px"><span>ウォッチリストはどこに保存されますか？</span><span class="chev" style="font-size: 24px; color: #58a6ff; transition: transform .2s; line-height: 1" aria-hidden="true">+</span></summary>
-<p style="margin: 12px 0 0; color: #b1bac4; font-size: 15px; white-space: pre-line">お使いのブラウザ内に保存されます。同じブラウザなら次回起動時もそのまま残りますが、別のブラウザやPCには引き継がれません。</p>
-</details>
-
-<details style="border-bottom: 1px solid #30363d; padding: 20px 0">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 700; min-height: 28px"><span>終了するにはどうすればいいですか？</span><span class="chev" style="font-size: 24px; color: #58a6ff; transition: transform .2s; line-height: 1" aria-hidden="true">+</span></summary>
-<p style="margin: 12px 0 0; color: #b1bac4; font-size: 15px; white-space: pre-line">起動時に開く黒い画面（ターミナル）を閉じるとサーバーが止まります。ブラウザを閉じただけではサーバーは動き続けます。</p>
-</details>
-
 </div>
 </div>
 
@@ -383,8 +361,8 @@ video,img{display:block}
 <div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 120px; display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end; justify-content: space-between">
 <div style="display: flex; flex-direction: column; gap: 16px; flex: 1 1 520px">
 <div style="display: flex; align-items: center; gap: 10px">
-<span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; color: #58a6ff">Σ</span>
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: 0.2em">SIGMA</span>
+<span style="font-family: var(--f-num); font-size: 24px; font-weight: 700; color: #58a6ff">Σ</span>
+<span style="font-family: var(--f-num); font-weight: 700; letter-spacing: 0.2em">SIGMA</span>
 <span style="color: #8b949e; font-size: 14px">Quantitative Stock Analyzer</span>
 </div>
 <p style="margin: 0; font-size: 13px; color: #8b949e; max-width: 860px">【免責事項】本ツールはテクニカル指標に基づく参考情報を提供するものであり、特定の銘柄の売買を推奨するもの、または投資助言を行うものではありません。表示される判定・価格は将来の成果を保証しません。株式投資には元本割れのリスクがあります。投資の最終判断はご自身の責任で行ってください。</p>
